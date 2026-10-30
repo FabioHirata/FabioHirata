@@ -1,48 +1,49 @@
-# Fabio Hirata
-### Entre pessoas, operações e tecnologia.
+<p align="center">
+  <img src="assets/hero.svg" alt="Fabio Hirata — operações em software claro. Interfaces úteis, regras explícitas e código verificável." width="100%">
+</p>
 
-Transformo rotinas de operação em interfaces claras, regras testáveis e ferramentas que você pode explorar. Aqui, os projetos mostram o trabalho: experimente a interface, leia as decisões e confira o código.
+<p align="center">
+  <a href="#projetos">Projetos</a> &nbsp;·&nbsp; <a href="https://fabiohirata.github.io/fabio-hirata-site/">Site pessoal e contato ↗</a> &nbsp;·&nbsp; <a href="#english">English</a> &nbsp;·&nbsp; <a href="#日本語">日本語</a>
+</p>
 
-**[Site pessoal e contato](https://fabiohirata.github.io/fabio-hirata-site/)** · **Português / English / 日本語**
+Transformo rotinas de operação em ferramentas que você pode explorar: interfaces claras, regras testáveis e decisões documentadas. Os três projetos abaixo mostram a experiência no navegador e o código por trás dela.
 
----
+<a id="projetos"></a>
 
-## Projetos em destaque
+## Projetos selecionados
 
-### 01 · Turno
-**Planejamento de equipe com regras que acompanham cada alteração.**
+### Turno · Planejamento de equipes
 
-Uma escala semanal que cruza disponibilidade, cobertura e carga horária. A interface mostra onde faltam pessoas e quais atribuições precisam de revisão.
+<a href="https://fabiohirata.github.io/turno-shift-planner/"><img src="assets/turno.svg" alt="Turno: arte de uma grade semanal de turnos; abrir demonstração" width="100%"></a>
 
-- **Experimente:** ajuste os turnos, resolva conflitos e exporte a escala.
-- **Por dentro:** API REST em **Go**, frontend **JavaScript**, persistência JSON com escrita atômica e revisões para evitar sobrescritas em edições concorrentes.
-- **Decisão de projeto:** modo de demonstração independente; no modo API, o servidor valida as alterações e calcula os relatórios.
+Uma escala semanal que cruza **disponibilidade, cobertura e carga horária**. A interface aponta lacunas e atribuições que precisam de revisão. Na demonstração, você pode ajustar turnos, resolver conflitos e exportar a escala.
 
-**[Abrir demo ↗](https://fabiohirata.github.io/turno-shift-planner/)** · [Código, arquitetura e execução local](https://github.com/FabioHirata/turno-shift-planner) · [Testes e verificação](https://github.com/FabioHirata/turno-shift-planner/blob/main/docs/QA.md)
+**Go · JavaScript** — API REST com persistência JSON atômica, revisões otimistas e testes de contrato. A demo pública usa dados fictícios e roda sem o backend; o modo API é executado localmente.
+
+**[Explorar a demo ↗](https://fabiohirata.github.io/turno-shift-planner/)** &nbsp;·&nbsp; [Código e arquitetura](https://github.com/FabioHirata/turno-shift-planner) &nbsp;·&nbsp; [Testes](https://github.com/FabioHirata/turno-shift-planner/blob/main/docs/QA.md)
 
 <details>
-<summary>Ver a interface · Turno</summary>
+<summary>Ver captura real da interface · Turno</summary>
 
-<p>Captura do modo API Go executado localmente, com dados fictícios.</p>
+<p>Modo API Go executado localmente, com dados fictícios.</p>
 <img src="https://raw.githubusercontent.com/FabioHirata/turno-shift-planner/main/docs/api-go-pt.png" width="720" alt="Turno: escala semanal, indicadores de cobertura, alertas e disponibilidade da equipe fictícia">
 
 </details>
 
 ---
 
-### 02 · Forno
-**Pedidos organizados, com a capacidade de produção à vista.**
+### Forno · Encomendas e capacidade diária
 
-Um balcão de encomendas para uma padaria fictícia. Catálogo, preço, produção do dia e andamento do pedido ficam no mesmo fluxo.
+<a href="https://fabiohirata.github.io/forno-order-desk/"><img src="assets/forno.svg" alt="Forno: arte de três pedidos organizados; abrir demonstração" width="100%"></a>
 
-- **Experimente:** crie uma encomenda, teste o limite diário e acompanhe seu status.
-- **Por dentro:** **JavaScript, HTML e CSS**, regras de domínio isoladas, valores em ienes inteiros e persistência versionada no navegador.
-- **Decisão de projeto:** cancelar libera capacidade; reativar um pedido exige validar o limite novamente. Exportação CSV inclui proteção contra fórmulas.
+Um balcão para uma padaria fictícia. **Catálogo, preço, produção do dia e andamento dos pedidos** ficam no mesmo fluxo. Você pode criar uma encomenda, testar o limite diário e acompanhar seu status.
 
-**[Abrir demo ↗](https://fabiohirata.github.io/forno-order-desk/)** · [Código e decisões](https://github.com/FabioHirata/forno-order-desk) · [Testes e verificação](https://github.com/FabioHirata/forno-order-desk/blob/main/docs/QA.md)
+**JavaScript · HTML · CSS** — regras de domínio isoladas, valores em ienes inteiros e dados versionados no navegador. Cancelar libera capacidade; reativar exige nova validação. O CSV exportado tem proteção contra fórmulas.
+
+**[Explorar a demo ↗](https://fabiohirata.github.io/forno-order-desk/)** &nbsp;·&nbsp; [Código e decisões](https://github.com/FabioHirata/forno-order-desk) &nbsp;·&nbsp; [Testes](https://github.com/FabioHirata/forno-order-desk/blob/main/docs/QA.md)
 
 <details>
-<summary>Ver a interface · Forno</summary>
+<summary>Ver captura real da interface · Forno</summary>
 
 <img src="https://raw.githubusercontent.com/FabioHirata/forno-order-desk/main/docs/desktop-pt.png" width="720" alt="Forno: formulário de encomenda, capacidade diária e quadro de pedidos fictícios">
 
@@ -50,32 +51,32 @@ Um balcão de encomendas para uma padaria fictícia. Catálogo, preço, produç�
 
 ---
 
-### 03 · Service Watch
-**Observações de serviços e histórico de incidentes, sem perder o contexto.**
+### Service Watch · Observações e incidentes
 
-Uma central de operações que reúne indicadores, janelas de observação e acompanhamento de incidentes.
+<a href="https://fabiohirata.github.io/service-watch/"><img src="assets/service-watch.svg" alt="Service Watch: arte de uma linha de observações e eventos; abrir demonstração" width="100%"></a>
 
-- **Experimente:** explore as métricas ilustrativas e registre a evolução de um incidente.
-- **Por dentro:** coletor HTTP e API em **Python**, armazenamento transacional **SQLite** e frontend **JavaScript**.
-- **Decisão de projeto:** no backend local, a coleta é real e manual, com destinos explicitamente permitidos e limites de tempo. Encerrar um incidente preserva as observações históricas.
+Uma central que reúne **indicadores, janelas de observação e histórico de incidentes**. Na demonstração, você pode explorar métricas ilustrativas e registrar a evolução de um incidente.
 
-**[Abrir demo ↗](https://fabiohirata.github.io/service-watch/)** · [Código, arquitetura e execução local](https://github.com/FabioHirata/service-watch) · [Testes e verificação](https://github.com/FabioHirata/service-watch/blob/main/docs/QA.md)
+**Python · SQLite · JavaScript** — coletor HTTP e API locais, armazenamento transacional e frontend responsivo. A coleta real é manual, limitada a destinos permitidos e preserva as observações mesmo após o encerramento de um incidente. A demo pública usa dados fictícios.
+
+**[Explorar a demo ↗](https://fabiohirata.github.io/service-watch/)** &nbsp;·&nbsp; [Código e arquitetura](https://github.com/FabioHirata/service-watch) &nbsp;·&nbsp; [Testes](https://github.com/FabioHirata/service-watch/blob/main/docs/QA.md)
 
 <details>
-<summary>Ver a interface · Service Watch</summary>
+<summary>Ver captura real da interface · Service Watch</summary>
 
-<p>Captura da demonstração estática, com métricas e serviços fictícios.</p>
 <img src="https://raw.githubusercontent.com/FabioHirata/service-watch/main/docs/desktop-pt.jpg" width="720" alt="Service Watch: indicadores ilustrativos, gráficos de observações e registro de incidentes fictícios">
 
 </details>
 
 ---
 
-### O que conecta os projetos
+### O fio condutor
 
-**Regras de negócio explícitas · Interfaces responsivas · PT / EN / 日本語 · Testes de domínio · Documentação das decisões**
+**Regras de negócio explícitas · Interfaces responsivas · PT / EN / 日本語 · Testes de domínio · Decisões documentadas**
 
-As demos públicas usam cenários fictícios e funcionam no navegador. **GitHub Pages não executa os backends Go e Python**: os repositórios explicam como rodá-los localmente. São projetos de portfólio, sem clientes ou operação em produção alegados. Não insira dados pessoais.
+As demos públicas funcionam no navegador com cenários fictícios. GitHub Pages não executa os backends Go e Python; cada repositório explica como rodá-los localmente. Estes são projetos de portfólio, sem alegação de clientes ou serviços em produção. Não insira dados pessoais nas demos.
+
+<a id="english"></a>
 
 <details>
 <summary><strong>English · Explore the projects</strong></summary>
@@ -93,6 +94,8 @@ All three interfaces support Portuguese, English and Japanese. Public demos use 
 [Personal website and contact](https://fabiohirata.github.io/fabio-hirata-site/)
 
 </details>
+
+<a id="日本語"></a>
 
 <details>
 <summary><strong>日本語 · プロジェクトを見る</strong></summary>

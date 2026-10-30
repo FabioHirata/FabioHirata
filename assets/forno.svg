@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 230" role="img" aria-labelledby="title desc">
+  <title id="title">Forno — balcão de encomendas</title><desc id="desc">Arte abstrata de pedidos e capacidade de produção.</desc>
+  <rect width="1100" height="230" rx="18" fill="#57372F"/>
+  <circle cx="922" cy="118" r="178" fill="#EEC48D" fill-opacity=".055"/>
+  <rect x="24" y="24" width="86" height="27" rx="13" fill="#EEC48D"/>
+  <text x="40" y="43" fill="#57372F" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1">02 / 03</text>
+  <text x="29" y="122" fill="#FBF3E6" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="80" font-weight="750" letter-spacing="-4">Forno</text>
+  <text x="32" y="172" fill="#F0D1B6" font-family="Arial,sans-serif" font-size="24">Pedidos no ritmo da produção.</text>
+  <g transform="translate(672 25)">
+    <path d="M0 34h124v171H0zM142 5h124v200H142zM284 43h124v162H284z" fill="#FBF3E6"/>
+    <path d="M17 64h89M17 77h64M17 111h89M17 124h50M159 35h89M159 48h64M159 87h89M159 100h51M301 73h89M301 86h62M301 119h89M301 132h55" stroke="#C69B80" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="65" cy="165" r="19" fill="#B0BB85"/><path d="M58 164l5 5 10-11" fill="none" stroke="#57372F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="207" cy="161" r="19" fill="#EEC48D"/><path d="M200 160l5 5 10-11" fill="none" stroke="#57372F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="349" cy="165" r="19" fill="#B0BB85"/><path d="M342 164l5 5 10-11" fill="none" stroke="#57372F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
