@@ -3,12 +3,10 @@
 </p>
 
 <p align="center">
-  <a href="#projetos">Projetos</a> &nbsp;·&nbsp; <a href="https://fabiohirata.github.io/fabio-hirata-site/">Site pessoal e contato ↗</a> &nbsp;·&nbsp; <a href="#english">English</a> &nbsp;·&nbsp; <a href="#日本語">日本語</a>
+  <a href="#projetos-selecionados">Projetos</a> &nbsp;·&nbsp; <a href="https://fabiohirata.github.io/fabio-hirata-site/">Site pessoal e contato ↗</a> &nbsp;·&nbsp; <a href="#user-content-english">English</a> &nbsp;·&nbsp; <a href="#user-content-日本語">日本語</a>
 </p>
 
 Transformo rotinas de operação em ferramentas que você pode explorar: interfaces claras, regras testáveis e decisões documentadas. Os três projetos abaixo mostram a experiência no navegador e o código por trás dela.
-
-<a id="projetos"></a>
 
 ## Projetos selecionados
 
